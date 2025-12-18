@@ -76,10 +76,10 @@ import math           # Funciones matemáticas (cos, sin, pi)
 
 # Rutas a archivos del modelo y políticas
 # (Modificar según la ubicación en tu sistema)
-MODEL_PATH = "/home/iudc/unitree_robotic/unitree_mujoco/unitree_robots/g1/g1.xml"
-POLICY_PATH = "/home/iudc/unitree_robotic/politicas/test.pt"
-ADAPTER_PATH = "/home/iudc/unitree_robotic/politicas/adapter.pt"
-NORM_STATS_PATH = "/home/iudc/unitree_robotic/politicas/adapter_norm_stats.pt"
+MODEL_PATH = "" # Ruta de modelo del robot en xml
+POLICY_PATH = "" # Ruta de la politica principal
+ADAPTER_PATH = "" # Ruta de la politica de adapatación
+NORM_STATS_PATH = "" # Ruta de la politica de la normalizacion de estados
 
 
 # =============================================================================
