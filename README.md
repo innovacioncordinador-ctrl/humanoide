@@ -147,8 +147,6 @@ conda activate g1-env
 # Ejecutar una secuencia autónoma
 python codigos/secuencias_amo/secuencia_completa.py
 
-# Ejecutar demo completa que usa HumanoidEnv + adapter
-python codigos/g1_caja.py
 ```
 
 ---
