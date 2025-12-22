@@ -1347,7 +1347,7 @@ class HumanoidEnv:
 
         # Adaptador: traduce comandos de alto nivel a objetivos articulares
         self.adapter = torch.jit.load(
-            "/home/iudc/unitree_robotic/politicas/adapter.pt",
+            "politicas/adapter.pt",
             map_location=self.device
         )
         self.adapter.eval()  # Modo evaluación (no entrenamiento)
@@ -1356,7 +1356,7 @@ class HumanoidEnv:
 
         # Estadísticas de normalización para el adaptador
         norm_stats = torch.load(
-            "/home/iudc/unitree_robotic/politicas/adapter_norm_stats.pt",
+            "politicas/adapter_norm_stats.pt",
             weights_only=False
         )
         self.input_mean = torch.tensor(norm_stats['input_mean'], device=self.device, dtype=torch.float32)
@@ -1735,7 +1735,7 @@ if __name__ == "__main__":
 
     # Ruta a la política preentrenada
     # Esta es una red neuronal que controla la locomoción del robot
-    policy_pth = '/home/iudc/unitree_robotic/politicas/test.pt'
+    policy_pth = 'politicas/politica.pt'
     
     # Cargar la política (modelo JIT de PyTorch)
     print("Cargando política...")
