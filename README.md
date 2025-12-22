@@ -24,6 +24,9 @@ python -c "import mujoco, mujoco_viewer, torch; print(mujoco.__version__, mujoco
 
 ## Instalación reproducible (recomendado: conda)
 
+[!tip] Clonar
+
+
 1. Crear y activar entorno (ejemplo con conda):
 
 ```bash
