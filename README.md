@@ -148,4 +148,3 @@ python codigos/g1_caja.py
 
 ---
 
-**Próximo paso:** ¿Quiere que normalice las versiones en este README (p. ej. fijar Python, MuJoCo y PyTorch a las versiones originales del proyecto) o que añada un `README.md` breve dentro de `codigos/secuencias_amo/` con ejemplos de parámetros?
