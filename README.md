@@ -24,8 +24,10 @@ python -c "import mujoco, mujoco_viewer, torch; print(mujoco.__version__, mujoco
 
 ## Instalación reproducible (recomendado: conda)
 
-[!tip] Clonar
-
+- Clonar el repositorio
+``` bash
+git clone https://github.com/innovacioncordinador-ctrl/humanoide.git
+```
 
 1. Crear y activar entorno (ejemplo con conda):
 
