@@ -76,10 +76,10 @@ import math           # Funciones matemáticas (cos, sin, pi)
 
 # Rutas a archivos del modelo y políticas
 # (Modificar según la ubicación en tu sistema)
-MODEL_PATH = "" # Ruta de modelo del robot en xml
-POLICY_PATH = "" # Ruta de la politica principal
-ADAPTER_PATH = "" # Ruta de la politica de adapatación
-NORM_STATS_PATH = "" # Ruta de la politica de la normalizacion de estados
+MODEL_PATH = "modelos/g1.xml" # Ruta de modelo del robot en xml
+POLICY_PATH = "politicas/policy.pt" # Ruta de la politica principal
+ADAPTER_PATH = "politicas/adapter.pt" # Ruta de la politica de adapatación
+NORM_STATS_PATH = "politicas/adapter_norm_stats.pt" # Ruta de la politica de la normalizacion de estados
 
 
 # =============================================================================
@@ -905,7 +905,7 @@ class WaveController:
         Ejemplo:
         --------
         >>> pose = {'right_elbow': 0.5, 'left_elbow': 0.3}
-        >>> indexed = self._convert_pose_to_indices(pose)
+        >>> indexed = self._convert_pose_to_indices(pose)glfw
         >>> print(indexed)  # {22: 0.5, 18: 0.3}
         """
         indexed_joints = {}
@@ -1838,7 +1838,7 @@ class HumanoidEnv:
             self.last_action,
             
             # Fase del ciclo de marcha
-            gait_obs,
+            gawit_obs,
             
             # Salida del adaptador
             self.adapter_output.cpu().numpy().squeeze(),
