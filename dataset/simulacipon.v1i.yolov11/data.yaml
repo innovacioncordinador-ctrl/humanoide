@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['cilindro', 'cuadrado', 'esfera', 'rectangulo']
+
+roboflow:
+  workspace: desktop-rs1im
+  project: simulacipon
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/desktop-rs1im/simulacipon/dataset/1
