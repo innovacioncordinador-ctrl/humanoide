@@ -4,11 +4,11 @@ import torch
 print(f"GPU disponible: {torch.cuda.is_available()}")
 print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU'}")
 
-model = YOLO('') 
+model = YOLO('') # Colocamos el modelo a entrenar (por ejemplo, 'yolov8n.pt' o 'yolov8s.pt')
 
 # Entrenar el modelo
 results = model.train(
-    data='', 
+    data='', # Añadimos la ruta del archivo de datos .YAML del conjunto personalizado (dataset)
     epochs=150,                       # Número de épocas
     imgsz=640,                        # Tamaño de imagen
     batch=16,                         # Batch size (ajusta según tu VRAM)
